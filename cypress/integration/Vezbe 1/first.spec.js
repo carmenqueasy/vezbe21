@@ -46,18 +46,20 @@ it('TC2 - Visit My Gallery Register', function() {
 it('TC3 - Visit My Gallery pozitivno', function() {
     //cy.visit('/')
     //cy.contains ('Login').click()
-    authPage.email.type(EMAIL.EXISTING)
-    authPage.password.type(EMAIL.PASSWORD)
-    authPage.submit.click()
+    authPage.login(EMAIL.EXISTING, EMAIL.PASSWORD)
+    //ova fnckija gore menja ove tri stvari ispod email, pass i submit
+    //authPage.email.type(EMAIL.EXISTING)
+    //authPage.password.type(EMAIL.PASSWORD)
+    //authPage.submit.click()
 })
 
 it('TC4 - Visit My Gallery negativan invalid pass', function() {
     //cy.visit('/')
     //cy.contains ('Login').click()
-    cy.get('input[id="email"]').type('ivi@gmail.com')
-    cy.get('input[id="password"]').type('ivana2123')
-    authPage.submit.click()
-    cy.get('.alert-danger').should ('have.text' , 'Bad Credentials')
+    //ubacujemo onu funckiju koja menja email i pass i submit
+    authPage.login('ivana4001@gmail.com','ttttt')
+    //alert smo napravili isto u page
+    authPage.alert.should ('have.text' , 'Bad Credentials')
 })
 
 it('TC5 - Visit My Gallery negativan invalid email', function() {
