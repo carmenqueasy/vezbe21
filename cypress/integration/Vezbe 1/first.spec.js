@@ -1,5 +1,7 @@
 import { EMAIL }from '../../fixtures/constants'
-import {authPage} from '../../page_object/login.page'
+import { authPage } from '../../page_object/login.page'
+
+//push obavezan na git
 
 
 describe('My First Test', function() {
