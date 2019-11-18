@@ -55,7 +55,7 @@ it('TC3 - Visit My Gallery pozitivno', function() {
     //authPage.submit.click()
 })
 
-it('TC4 - Visit My Gallery negativan invalid pass', function() {
+it('TC4 - Visit My Gallery pogresan pass', function() {
     //cy.visit('/')
     //cy.contains ('Login').click()
     //ubacujemo onu funckiju koja menja email i pass i submit
@@ -64,7 +64,7 @@ it('TC4 - Visit My Gallery negativan invalid pass', function() {
     authPage.alert.should ('have.text' , 'Bad Credentials')
 })
 
-it('TC5 - Visit My Gallery negativan invalid email', function() {
+it('TC5 - Visit My Gallery negativan pogresan email', function() {
     //cy.visit('/')
     //cy.contains ('Login').click()
     cy.get('input[id="email"]').type('ivi2@gmail.com')
@@ -74,7 +74,7 @@ it('TC5 - Visit My Gallery negativan invalid email', function() {
 
 })
 
-it('TC6 - Visit My Gallery negativan prazan email', function() {
+it('TC6 - Visit My Gallery negativan email', function() {
     //cy.visit('/')
     //cy.contains ('Login').click()
     cy.get('input[id="email"]').type('ivakakakak@sfsf.com')
@@ -84,7 +84,7 @@ it('TC6 - Visit My Gallery negativan prazan email', function() {
 
 })
 
-it('TC7 - Visit My Gallery negativan prazan pass i email', function() {
+it('TC7 - Visit My Gallery negativan pogresan pass i email', function() {
     //cy.visit('/')
     //cy.contains ('Login').click()
     cy.get('input[id="email"]').type('ivakakakak@sfsf.com')
@@ -94,7 +94,7 @@ it('TC7 - Visit My Gallery negativan prazan pass i email', function() {
 
 })
 
-it('TC8 - Visit My Gallery negativan prazan pass', function() {
+it('TC8 - Visit My Gallery negativan pogresan pass', function() {
     //cy.visit('/')
     //cy.contains ('Login').click()
     cy.get('input[id="email"]').type('ivi@gmail.com')
