@@ -103,4 +103,8 @@ it('TC8 - Visit My Gallery negativan pogresan pass', function() {
     cy.get('.alert-danger').should ('have.text' , 'Bad Credentials')
 
 })
+
+
+
+
 })

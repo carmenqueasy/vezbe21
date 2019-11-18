@@ -26,7 +26,8 @@ it('TC2 - Visit My Gallery Register pozitivno', function() {
     cy.get('[type="submit"]').click()
 })
 
-it('TC3 - Visit My Gallery Register negativno - checkbox nije cekiran', function () {
+
+it('TC3 - Visit My Gallery Register negativno - checkbox nije cekiran, sve uneseno', function () {
     cy.visit('/')
     cy.contains('Register').click()
     cy.url().should('include', '/register')
@@ -39,7 +40,9 @@ it('TC3 - Visit My Gallery Register negativno - checkbox nije cekiran', function
     cy.get('[type="submit"]').click()
  })
 
-    it.only('TC4 - Visit My Gallery Register negativno - sifra nije dobra', function () {
+
+
+    it('TC4 - Visit My Gallery Register negativno - sifra nije dobra', function () {
         cy.visit('/')
         cy.contains('Register').click()
         cy.url().should('include', '/register')
@@ -52,7 +55,7 @@ it('TC3 - Visit My Gallery Register negativno - checkbox nije cekiran', function
         cy.get('[type="submit"]').click()
     })
 
-    it.only('TC5 - Visit My Gallery Register negativno - confirmation sifre nije dobra', function () {
+    it('TC5 - Visit My Gallery Register negativno - confirmation sifra nije dobra', function () {
         cy.visit('/')
         cy.contains('Register').click()
         cy.url().should('include', '/register')
@@ -65,8 +68,31 @@ it('TC3 - Visit My Gallery Register negativno - checkbox nije cekiran', function
         cy.get('[type="submit"]').click()
     })
 
+    it('TC6 - Visit My Gallery Register negativno - los email unesem', function () {
+        cy.visit('/')
+        cy.contains('Register').click()
+        cy.url().should('include', '/register')
+        cy.get('input[id="first-name"]').type('ivi')
+        cy.get('input[id="last-name"]').type('pejic')
+        cy.get('input[id="email"]').type('i.com')
+        cy.get('input[id="password"]').type('ivana1234')
+        cy.get('input[id="password-confirmation"]').type('ivana1234')
+        cy.get('[type="checkbox"]').check()
+        cy.get('[type="submit"]').click()
+    })
 
-
+    it.only('TC7 - Visit My Gallery Register negativno - lose ime', function () {
+        cy.visit('/')
+        cy.contains('Register').click()
+        cy.url().should('include', '/register')
+        cy.get('input[id="first-name"]').type('1')
+        cy.get('input[id="last-name"]').type('pejic')
+        cy.get('input[id="email"]').type('idnasd222kj@gmail.com')
+        cy.get('input[id="password"]').type('ivana1234')
+        cy.get('input[id="password-confirmation"]').type('ivana1234')
+        cy.get('[type="checkbox"]').check()
+        cy.get('[type="submit"]').click()
+    })
 
 
 
