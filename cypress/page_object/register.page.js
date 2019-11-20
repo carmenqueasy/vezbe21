@@ -23,7 +23,7 @@ export default class AuthPage {
     get alert(){
         return cy.get('.alert-danger')
     }
-    register(ime, prezime, mejl, lozinka, lozinka_potvrda, checkbox){
+    register({ime, prezime, mejl, lozinka, lozinka_potvrda, checkbox}){
         this.first_name.type(ime)
         this.last_name.type(prezime)
         this.email.type(mejl)
@@ -31,5 +31,7 @@ export default class AuthPage {
         this.password_conf.type(lozinka_potvrda)
         this.submit.click()
     }
+
+
 }
 export const authPage = new AuthPage()

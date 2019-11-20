@@ -1,5 +1,8 @@
 import { CREDO } from '../../fixtures/constants'
 import { authPage } from '../../page_object/register.page'
+import { randomEmail } from '../../utils'
+
+
 describe('My Second Test', function(){
     
     beforeEach(() => {
@@ -94,8 +97,20 @@ describe('My Second Test', function(){
         cy.get('button[type="submit"]').click()
         cy.get('.alert-danger').should('have.text','The email has already been taken.The password confirmation does not match.')*/
     })
-    
-    
+
+  it.only('tc dodatan - 01 register proba', function () {
+    authPage.register({
+    ime:'Olivera',
+    prezime:'Delic',
+    mejl:randomEmail(),
+    lozinka:'oljaiva200',
+    lozinka_potvrda:'oljaiva2007'
+          
+      })
+   }) 
+
+
+
 })
 
 
