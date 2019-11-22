@@ -1,36 +1,46 @@
+//definisemo klasu koja ima sledece:ime, prezime, email, pass, confimpass i submit i alert *koje jos ne znam gde da ubacim
 
-//ime klase mora biti sa velikim slovom
+
 export default class AuthPage {
-
-
+    get first_name() {
+        return cy.get('#first-name')
+    }
+    get last_name() {
+        return cy.get('#last-name')
+    }
     get email() {
-        return cy.get('input[id="email"]')
-        
+        return cy.get('#email')
     }
-
     get password() {
-        return cy.get('input[id="password"]')
-        
+        return cy.get('#password')
+    }
+    get password_conf() {
+        return cy.get('#password-confirmation')
     }
 
-
-    get submit() {
-        return cy.get('button[type=submit]')
+    /*get submit() {
+        return cy.get('button[type="submit"]')
     }
-
+    /*get checkbox(){
+        return cy.get('input[type="checkbox"]')
+      }*/
     get alert() {
         return cy.get('.alert-danger')
     }
 
 
-    //pravimo funkciju koja menja citav onaj deo za mail pass  submit tj login menja
-    login (email, password)  {
-        this.email.type(email)
-        this.password.type(password)
-        this.submit.click()
-   
+
+    //ovo je funkcija gde imam sve ono sto mi treba da zamenim odjednom deo 
+    regfun (ime, prezime, mejl, lozinka, lozinka_potvrda) {
+        this.first_name.type(ime)
+        this.last_name.type(prezime)
+        this.email.type(mejl)
+        this.password.type(lozinka)
+        this.password_conf.type(lozinka_potvrda)
+        /*this.submit.click()*/
+        
     }
 }
 
-//malo slovo mora biti za konstantu
-export const authPage = new AuthPage ()
+
+export const authPage = new AuthPage()
