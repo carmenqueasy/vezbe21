@@ -10,3 +10,11 @@ export const REG = {
     PASSWORD: 'ivana123',
     PASSCON: 'ivana123'
 }
+
+export const GALL = {
+    tit: 'IVANA',
+    disc: 'PEJIC',
+    iurl: '055@gmail.com',
+    PASSWORD: 'ivana123',
+    PASSCON: 'ivana123'
+}

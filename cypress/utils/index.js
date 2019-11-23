@@ -7,3 +7,11 @@ export const randomEmail = () => {
       );
 }
 //random string kome se doda @.... i dobijemo neki generiski mail
+
+export const randomTitle = () => {
+    return (
+        Math.random()
+          .toString(36)
+          .substr(2, 7)
+      );
+}
