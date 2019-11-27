@@ -47,12 +47,12 @@ describe('Create Gallery Testovi', function() {
     it('TC - 04 My gallery pagination count 12', function(){
         cy.server()
         cy.route('GET', Cypress.config('backendUrl') + 'galleries?page=1&term=', 'fixture:gallery11.json').as('stub')
-        cy.get('.btn-custom').click()
         cy.visit('/')
+
         cy.route('GET', Cypress.config('backendUrl') + 'galleries?page=2&term=', 'fixture:gallery1.json').as('stub')
-        cy.visit('/')
+        
         cy.get('.btn-custom').click()
-        cy.get('.cell').eq(10).should('exist')
+        
     
         
         
