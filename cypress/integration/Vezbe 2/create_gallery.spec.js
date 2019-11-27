@@ -119,6 +119,9 @@ describe('Create Gallery Testovi', function() {
         cy.get('.btn-custom').contains('Submit')
         
     })
+//ovde cemo da testiramo MOCKovanje, stubovanje
+//ovde cemo da testiramo MOCKovanje, stubovanje
+//ovde cemo da testiramo MOCKovanje, stubovanje
 
 
 })

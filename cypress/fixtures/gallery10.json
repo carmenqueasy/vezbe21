@@ -1,0 +1,265 @@
+{
+  "galleries": [
+    {
+      "id": 1067,
+      "title": "3k5ac0w",
+      "description": "desc1",
+      "user_id": 31,
+      "created_at": "2019-11-27 17:32:48",
+      "updated_at": "2019-11-27 17:32:48",
+      "user": {
+        "id": 31,
+        "first_name": "Marko",
+        "last_name": "Markovic",
+        "email": "tica@gmail.com",
+        "terms_and_conditions": 1,
+        "created_at": "2019-11-02 18:15:54",
+        "updated_at": "2019-11-02 18:15:54"
+      },
+      "images": [
+        {
+          "id": 2220,
+          "image_url": "https:\\/\\/upload.wikimedia.org\\/wikipedia\\/commons\\/4\\/41\\/Sunflower_from_Silesia2.jpg",
+          "gallery_id": 1067,
+          "created_at": "2019-11-27 17:32:48",
+          "updated_at": "2019-11-27 17:32:48"
+        }
+      ]
+    },
+    {
+      "id": 1066,
+      "title": "t7bvi7d",
+      "description": "desc1",
+      "user_id": 31,
+      "created_at": "2019-11-27 17:32:02",
+      "updated_at": "2019-11-27 17:32:02",
+      "user": {
+        "id": 31,
+        "first_name": "Marko",
+        "last_name": "Markovic",
+        "email": "tica@gmail.com",
+        "terms_and_conditions": 1,
+        "created_at": "2019-11-02 18:15:54",
+        "updated_at": "2019-11-02 18:15:54"
+      },
+      "images": [
+        {
+          "id": 2219,
+          "image_url": "https:\\/\\/upload.wikimedia.org\\/wikipedia\\/commons\\/4\\/41\\/Sunflower_from_Silesia2.jpg",
+          "gallery_id": 1066,
+          "created_at": "2019-11-27 17:32:02",
+          "updated_at": "2019-11-27 17:32:02"
+        }
+      ]
+    },
+    {
+      "id": 1065,
+      "title": "80m6x71@vivifyacademy.com",
+      "description": "slike",
+      "user_id": 62,
+      "created_at": "2019-11-27 17:16:28",
+      "updated_at": "2019-11-27 17:16:28",
+      "user": {
+        "id": 62,
+        "first_name": "boki",
+        "last_name": "boki",
+        "email": "boki@gmail.com",
+        "terms_and_conditions": 1,
+        "created_at": "2019-11-07 16:20:43",
+        "updated_at": "2019-11-07 16:20:43"
+      },
+      "images": [
+        {
+          "id": 2218,
+          "image_url": "https:\\/\\/upload.wikimedia.org\\/wikipedia\\/en\\/b\\/b3\\/Imagine_Dragons_performing_in_Sydney.jpg",
+          "gallery_id": 1065,
+          "created_at": "2019-11-27 17:16:28",
+          "updated_at": "2019-11-27 17:16:28"
+        }
+      ]
+    },
+    {
+      "id": 1064,
+      "title": "LA",
+      "description": "default",
+      "user_id": 2,
+      "created_at": "2019-11-27 17:15:41",
+      "updated_at": "2019-11-27 17:15:41",
+      "user": {
+        "id": 2,
+        "first_name": "Olivera",
+        "last_name": "Delic",
+        "email": "olivera.delic.07@gmail.com",
+        "terms_and_conditions": 1,
+        "created_at": "2019-10-10 10:19:50",
+        "updated_at": "2019-10-10 10:19:50"
+      },
+      "images": [
+        {
+          "id": 2217,
+          "image_url": "https:\\/\\/upload.wikimedia.org\\/wikipedia\\/commons\\/thumb\\/f\\/f5\\/Lotus_flower_%28978659%29.jpg\\/1200px-Lotus_flower_%28978659%29.jpg",
+          "gallery_id": 1064,
+          "created_at": "2019-11-27 17:15:41",
+          "updated_at": "2019-11-27 17:15:41"
+        }
+      ]
+    },
+    {
+      "id": 1063,
+      "title": "9zjmehp@vivifyacademy.com",
+      "description": "default",
+      "user_id": 2,
+      "created_at": "2019-11-27 17:15:19",
+      "updated_at": "2019-11-27 17:15:19",
+      "user": {
+        "id": 2,
+        "first_name": "Olivera",
+        "last_name": "Delic",
+        "email": "olivera.delic.07@gmail.com",
+        "terms_and_conditions": 1,
+        "created_at": "2019-10-10 10:19:50",
+        "updated_at": "2019-10-10 10:19:50"
+      },
+      "images": [
+        {
+          "id": 2216,
+          "image_url": "https:\\/\\/upload.wikimedia.org\\/wikipedia\\/commons\\/thumb\\/f\\/f5\\/Lotus_flower_%28978659%29.jpg\\/1200px-Lotus_flower_%28978659%29.jpg",
+          "gallery_id": 1063,
+          "created_at": "2019-11-27 17:15:19",
+          "updated_at": "2019-11-27 17:15:19"
+        }
+      ]
+    },
+    {
+      "id": 1061,
+      "title": "jyrpiq6",
+      "description": "opis",
+      "user_id": 1,
+      "created_at": "2019-11-27 15:55:23",
+      "updated_at": "2019-11-27 15:55:23",
+      "user": {
+        "id": 1,
+        "first_name": "Zoran",
+        "last_name": "Todorcevic",
+        "email": "zokapacker@gmail.com",
+        "terms_and_conditions": 1,
+        "created_at": "2019-10-10 09:31:24",
+        "updated_at": "2019-10-10 09:31:24"
+      },
+      "images": [
+        {
+          "id": 2214,
+          "image_url": "https:\\/\\/thumbs-prod.si-cdn.com\\/axLBu4V_KP6gbQQtbRulSdlWkXQ=\\/420x240\\/https:\\/\\/public-media.si-cdn.com\\/filer\\/28\\/bc\\/28bc19a4-ec88-4e71-9ff2-19efc1375e6c\\/ap_18295547401274.jpg",
+          "gallery_id": 1061,
+          "created_at": "2019-11-27 15:55:23",
+          "updated_at": "2019-11-27 15:55:23"
+        }
+      ]
+    },
+    {
+      "id": 1062,
+      "title": "jyrpiq6",
+      "description": "opis",
+      "user_id": 1,
+      "created_at": "2019-11-27 15:55:23",
+      "updated_at": "2019-11-27 15:55:23",
+      "user": {
+        "id": 1,
+        "first_name": "Zoran",
+        "last_name": "Todorcevic",
+        "email": "zokapacker@gmail.com",
+        "terms_and_conditions": 1,
+        "created_at": "2019-10-10 09:31:24",
+        "updated_at": "2019-10-10 09:31:24"
+      },
+      "images": [
+        {
+          "id": 2215,
+          "image_url": "https:\\/\\/thumbs-prod.si-cdn.com\\/axLBu4V_KP6gbQQtbRulSdlWkXQ=\\/420x240\\/https:\\/\\/public-media.si-cdn.com\\/filer\\/28\\/bc\\/28bc19a4-ec88-4e71-9ff2-19efc1375e6c\\/ap_18295547401274.jpg",
+          "gallery_id": 1062,
+          "created_at": "2019-11-27 15:55:23",
+          "updated_at": "2019-11-27 15:55:23"
+        }
+      ]
+    },
+    {
+      "id": 1059,
+      "title": "1tlpzy5",
+      "description": "opis",
+      "user_id": 1,
+      "created_at": "2019-11-27 15:49:53",
+      "updated_at": "2019-11-27 15:49:53",
+      "user": {
+        "id": 1,
+        "first_name": "Zoran",
+        "last_name": "Todorcevic",
+        "email": "zokapacker@gmail.com",
+        "terms_and_conditions": 1,
+        "created_at": "2019-10-10 09:31:24",
+        "updated_at": "2019-10-10 09:31:24"
+      },
+      "images": [
+        {
+          "id": 2212,
+          "image_url": "https:\\/\\/thumbs-prod.si-cdn.com\\/axLBu4V_KP6gbQQtbRulSdlWkXQ=\\/420x240\\/https:\\/\\/public-media.si-cdn.com\\/filer\\/28\\/bc\\/28bc19a4-ec88-4e71-9ff2-19efc1375e6c\\/ap_18295547401274.jpg",
+          "gallery_id": 1059,
+          "created_at": "2019-11-27 15:49:53",
+          "updated_at": "2019-11-27 15:49:53"
+        }
+      ]
+    },
+    {
+      "id": 1060,
+      "title": "1tlpzy5",
+      "description": "opis",
+      "user_id": 1,
+      "created_at": "2019-11-27 15:49:53",
+      "updated_at": "2019-11-27 15:49:53",
+      "user": {
+        "id": 1,
+        "first_name": "Zoran",
+        "last_name": "Todorcevic",
+        "email": "zokapacker@gmail.com",
+        "terms_and_conditions": 1,
+        "created_at": "2019-10-10 09:31:24",
+        "updated_at": "2019-10-10 09:31:24"
+      },
+      "images": [
+        {
+          "id": 2213,
+          "image_url": "https:\\/\\/thumbs-prod.si-cdn.com\\/axLBu4V_KP6gbQQtbRulSdlWkXQ=\\/420x240\\/https:\\/\\/public-media.si-cdn.com\\/filer\\/28\\/bc\\/28bc19a4-ec88-4e71-9ff2-19efc1375e6c\\/ap_18295547401274.jpg",
+          "gallery_id": 1060,
+          "created_at": "2019-11-27 15:49:53",
+          "updated_at": "2019-11-27 15:49:53"
+        }
+      ]
+    },
+    {
+      "id": 1057,
+      "title": "nipfj0c",
+      "description": "opis",
+      "user_id": 1,
+      "created_at": "2019-11-27 15:44:25",
+      "updated_at": "2019-11-27 15:44:25",
+      "user": {
+        "id": 1,
+        "first_name": "Zoran",
+        "last_name": "Todorcevic",
+        "email": "zokapacker@gmail.com",
+        "terms_and_conditions": 1,
+        "created_at": "2019-10-10 09:31:24",
+        "updated_at": "2019-10-10 09:31:24"
+      },
+      "images": [
+        {
+          "id": 2210,
+          "image_url": "https:\\/\\/thumbs-prod.si-cdn.com\\/axLBu4V_KP6gbQQtbRulSdlWkXQ=\\/420x240\\/https:\\/\\/public-media.si-cdn.com\\/filer\\/28\\/bc\\/28bc19a4-ec88-4e71-9ff2-19efc1375e6c\\/ap_18295547401274.jpg",
+          "gallery_id": 1057,
+          "created_at": "2019-11-27 15:44:25",
+          "updated_at": "2019-11-27 15:44:25"
+        }
+      ]
+    }
+  ],
+  "count": 10
+}

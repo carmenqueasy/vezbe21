@@ -37,18 +37,10 @@ export default class AuthPage {
         this.email.type(mejl)
         this.password.type(lozinka)
         this.password_conf.type(lozinka_potvrda)
-<<<<<<< HEAD
-        this.submit.click()
-    }
-
-
-}
-=======
         /*this.submit.click()*/
         
     }
 }
 
 
->>>>>>> a4a72b7ccab8d6fe9e110b8d61bba976797801a7
 export const authPage = new AuthPage()
