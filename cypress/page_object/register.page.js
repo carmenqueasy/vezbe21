@@ -1,5 +1,3 @@
-//definisemo klasu koja ima sledece:ime, prezime, email, pass, confimpass i submit i alert *koje jos ne znam gde da ubacim
-
 
 export default class AuthPage {
     get first_name() {

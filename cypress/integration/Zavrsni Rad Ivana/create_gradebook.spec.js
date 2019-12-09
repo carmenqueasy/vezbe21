@@ -1,49 +1,75 @@
-//PISEMO STA PRVO IMPORTUJEMO IZ KONSTANTI I PAGE
-//import { REG } from '../../fixtures/constants'
-//import { authPage } from '../../page_object/register.page'
-//PISEMO STA PRVO IMPORTUJEMO IZ KONSTANTI I PAGE
+import { LOG } from '../../fixtures/constants'
+import { authPage } from '../../page_object/login_gradebook.page'
+import { rPage } from '../../page_object/register_gradebook.page'
+import { REGG } from '../../fixtures/constants'
+import { createGB } from '../../page_object/create_gradebook.page'
+import { GB } from '../../fixtures/constants'
+import { createPR } from '../../page_object/create_professor.page'
+import { PROF } from '../../fixtures/constants'
+import { randomFirstN } from '../../utils'
+import { randomLastN } from '../../utils'
 
 
-//pocinje nas describe u koji smestamo sve testove
-describe('Create Gradebook and Create Professor', function() {
+describe('Create Gradebook', function() {
     
     beforeEach(() => {
         cy.visit('/')
-        //cy.contains('Register').click()
         cy.contains('Sign in').click()
-        //authPage.regfun(REG.IME, REG.PREZIME, REG.EMAILING, REG.PASSWORD, REG.PASSCON)
-        //cy.contains('Register').click()
-        cy.get('input[name="email"]').type('ivana4001@gmail.com')
-        cy.get('input[type="password"]').type('ivana4001')
-        cy.get('[type="Submit"]').click()
+        authPage.login(LOG.EMAIL, LOG.PASS)
     })
 
     
 
-it('TC 1 - Open Create Gradebook page', function() {
-    //cy.visit('/')
+it('TC 1 - Open Create Gradebook page and check url', function() {
+    
     cy.contains ('Create Gradebook').click()
     cy.url().should('include', 'create-gradebook')
 
 })
 
-it('TC 2 - Create professor and create gradebook with that professor', function () {
-        //cy.visit('/')
-    cy.contains('Create Professor').click({ force: true })
-        //authPage.regfun(REG.IME, REG.PREZIME, REG.EMAILING, REG.PASSWORD, REG.PASSCON)
+it('TC 2 - Create gradebook with random professor and static title', function () {
+      
 
-    cy.get('input[id="firstName"]').type('ivana')
-    cy.get('input[id="lastName"]').type('tester')
-    cy.contains('Add images').click()
-    cy.get('input[placeholder="Image URL"]').type('https://previews.123rf.com/images/chrisdorney/chrisdorney1502/chrisdorney150200048/36611877-last-chance-red-rubber-stamp-over-a-white-background-.jpg')    
-    cy.contains('Submit').click()
     cy.contains('Create Gradebook').click()
-    cy.get('input[id="title"]').type('ivana')
-    cy.get('#professor').last()
+    cy.wait(2000)
+    cy.get('input[id="title"]').type('ivanatitlepejic')
+    cy.get('#professor > option').eq(0)
+        .then(element => cy.get('#professor').select(element.val()))
+    cy.wait(2000)
     cy.contains('Submit').click()
-    
+    cy.wait(2000)
+    cy.get('.form-control').type('ivanatitlepejic')
+
 })
 
+    it('TC 3 - Create gradebook with Title - 1 character - negative test', function () {
 
+        cy.contains('Create Gradebook').click()
+        cy.wait(2000)
+        cy.get('input[id="title"]').type('i')
+        cy.get('#professor > option').eq(0)
+            .then(element => cy.get('#professor').select(element.val()))
+        cy.wait(2000)
+        cy.contains('Submit').click()
+        cy.wait(2000)
+        cy.get('.alert-danger').should('contain', 'The title must be at least 2 characters' )
+        cy.get('.alert-danger').should('exist');
+        
+    })
+    it.only('TC 4 - Create gradebook with Title - more than 255 characters - negative test', function () {
+
+        cy.contains('Create Gradebook').click()
+        cy.wait(2000)
+        cy.get('input[id="title"]').type('iplllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll')
+        cy.get('#professor > option').eq(0)
+            .then(element => cy.get('#professor').select(element.val()))
+        cy.wait(2000)
+        cy.contains('Submit').click()
+        cy.wait(2000)
+        cy.get('.alert-danger').should('exist');
+
+    })
+
+  
 
 })

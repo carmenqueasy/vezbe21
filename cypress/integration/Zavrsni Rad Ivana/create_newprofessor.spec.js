@@ -1,60 +1,143 @@
-//PISEMO STA PRVO IMPORTUJEMO IZ KONSTANTI I PAGE
-//import { REG } from '../../fixtures/constants'
-//import { authPage } from '../../page_object/register.page'
-//PISEMO STA PRVO IMPORTUJEMO IZ KONSTANTI I PAGE
+import { LOG } from '../../fixtures/constants'
+import { authPage } from '../../page_object/login_gradebook.page'
+import { rPage } from '../../page_object/register_gradebook.page'
+import { REGG } from '../../fixtures/constants'
+import { createGB } from '../../page_object/create_gradebook.page'
+import { GB } from '../../fixtures/constants'
+import { createPR } from '../../page_object/create_professor.page'
+import { PROF } from '../../fixtures/constants'
+import { randomFirstN } from '../../utils'
+import { randomLastN } from '../../utils'
 
 
-//pocinje nas describe u koji smestamo sve testove
 describe('Create New Professor', function() {
     
     beforeEach(() => {
         cy.visit('/')
-        //cy.contains('Register').click()
         cy.contains('Sign in').click()
-        //authPage.regfun(REG.IME, REG.PREZIME, REG.EMAILING, REG.PASSWORD, REG.PASSCON)
-        //cy.contains('Register').click()
-        cy.get('input[name="email"]').type('ivana4001@gmail.com')
-        cy.get('input[type="password"]').type('ivana4001')
-        cy.get('[type="Submit"]').click()
+        authPage.login(LOG.EMAIL, LOG.PASS)
     })
 
     
 
-it('TC 1 - Open Create Professor page', function() {
-    //cy.visit('/')
+it('TC 1 - Open Create Professor page and check url', function() {
+   
     cy.contains('Create Professor').click({ force: true })
     cy.url().should('include', 'create-professor')
 
 })
 
 it('TC 2 - Create professor with one image', function () {
-        //cy.visit('/')
+       
     cy.contains('Create Professor').click({ force: true })
-        //authPage.regfun(REG.IME, REG.PREZIME, REG.EMAILING, REG.PASSWORD, REG.PASSCON)
-
-    cy.get('input[id="firstName"]').type('ivana')
-    cy.get('input[id="lastName"]').type('tester')
+    var randomFN = randomFirstN()
+    var randomLN = randomLastN()
+        
+    createPR.createprof(randomFN, randomLN)
+  
     cy.contains('Add images').click()
-    cy.get('input[placeholder="Image URL"]').type('https://previews.123rf.com/images/chrisdorney/chrisdorney1502/chrisdorney150200048/36611877-last-chance-red-rubber-stamp-over-a-white-background-.jpg')    
+    cy.get('input[placeholder="Image URL"]').type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpg')    
     cy.contains('Submit').click()
+    cy.url().should('include', 'all-professors')
+    cy.wait(2000)
+    cy.get('input[type=text]').type(randomFN)
+    cy.get('.table-dark').children('tbody').should('contain', randomFN)
+    cy.get('img[src*="https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpg"]').should("exist")            
     
 })
 
-    /*it('TC 3 - Create professor with two images  ovo ne radi nista na sajtu', function () {
-        //cy.visit('/')
+
+    it('TC 3 - Create professor with no images', function () {
+        
         cy.contains('Create Professor').click({ force: true })
-        //authPage.regfun(REG.IME, REG.PREZIME, REG.EMAILING, REG.PASSWORD, REG.PASSCON)
-
-        cy.get('input[id="firstName"]').type('ivana')
-        cy.get('input[id="lastName"]').type('tester')
-        cy.contains('Add images').click()
-        cy.get('input[placeholder="Image URL"]').type('https://previews.123rf.com/images/chrisdorney/chrisdorney1502/chrisdorney150200048/36611877-last-chance-red-rubber-stamp-over-a-white-background-.jpg')
-        cy.contains('Add images').click()
-        cy.get('input[placeholder="Image URL"]').type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpg')
+        var randomFN = randomFirstN()
+        var randomLN = randomLastN()
+        createPR.createprof(randomFN, randomLN)
         cy.contains('Submit').click()
+        cy.url().should('not.include', 'all-professors')
+        
 
-    })*/
+    })
+    it('TC 4 - Create professor with one image png', function () {
+
+        cy.contains('Create Professor').click({ force: true })
+        var randomFN = randomFirstN()
+        var randomLN = randomLastN()
+        createPR.createprof(randomFN, randomLN)
+        cy.contains('Add images').click()
+        cy.get('input[placeholder="Image URL"]').type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.png')
+        cy.contains('Submit').click()
+        cy.url().should('include', 'all-professors')
+        cy.get('.table-dark').children('tbody').should('contain', randomFN)
+        cy.get('img[src*="https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.png"]').should("exist")    
+
+    })
+
+    it('TC 5 - Create professor with one image jpeg', function () {
+
+        cy.contains('Create Professor').click({ force: true })
+        var randomFN = randomFirstN()
+        var randomLN = randomLastN()
+        createPR.createprof(randomFN, randomLN)
+        cy.contains('Add images').click()
+        cy.get('input[placeholder="Image URL"]').type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpeg')
+        cy.contains('Submit').click()
+        cy.url().should('include', 'all-professors')
+        cy.get('.table-dark').children('tbody').should('contain', randomFN)
+        cy.get('img[src*="https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpeg"]').should("exist")    
+
+    })
+
+    it('TC 6 - Create professor with two images', function () {
+
+        cy.contains('Create Professor').click({ force: true })
+        var randomFN = randomFirstN()
+        var randomLN = randomLastN()
+        createPR.createprof(randomFN, randomLN)
+        cy.contains('Add images').click()
+        cy.get('input[placeholder="Image URL"]').type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpeg')
+        cy.contains('Add images').click()
+        cy.get('input[placeholder="Image URL"]').eq(1).type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpeg')
+        cy.contains('Submit').click()
+        cy.url().should('include', 'all-professors')
+        
+    })
 
 
+    it('TC 7- Create professor with three images', function () {
 
+        cy.contains('Create Professor').click({ force: true })
+        var randomFN = randomFirstN()
+        var randomLN = randomLastN()
+        createPR.createprof(randomFN, randomLN)
+        cy.contains('Add images').click()
+        cy.get('input[placeholder="Image URL"]').type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpeg')
+        cy.contains('Add images').click()
+        cy.get('input[placeholder="Image URL"]').eq(1).type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpeg')
+        cy.contains('Add images').click()
+        cy.get('input[placeholder="Image URL"]').eq(2).type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpeg')
+        cy.contains('Submit').click()
+        cy.url().should('include', 'all-professors')
+
+    })
+
+
+    it('TC 8 - Create professor with two images and use UP button', function () {
+
+        cy.contains('Create Professor').click({ force: true })
+        var randomFN = randomFirstN()
+        var randomLN = randomLastN()
+        createPR.createprof(randomFN, randomLN)
+        cy.contains('Add images').click()
+        cy.get('input[placeholder="Image URL"]').type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.jpeg')
+        cy.contains('Add images').click()
+        cy.get('input[placeholder="Image URL"]').eq(1).type('https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.png')
+        cy.wait(10000)
+        cy.get('.btn-sm').eq(5).click()
+        cy.wait(10000)
+        cy.get('input[placeholder="Image URL"]').should('have.value', 'https://images-na.ssl-images-amazon.com/images/I/81pZyYQc7FL.png')
+       
+       
+
+    })
 })

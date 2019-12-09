@@ -1,0 +1,277 @@
+{
+
+  "data": [
+
+
+    {
+      "id": 1,
+      "title": "prvi",
+      "professor_id": 435,
+      "created_at": "2019-11-30 18:51:09",
+      "updated_at": "2019-12-04 19:35:09",
+      "professor": {
+        "id": 435,
+        "user_id": 435,
+        "url": null,
+        "created_at": "2019-12-04 17:35:48",
+        "updated_at": "2019-12-04 17:35:48",
+        "user": {
+          "id": 435,
+          "firstName": "zoka",
+          "lastName": "zokic",
+          "email": null,
+          "email_verified_at": null,
+          "termsAndConditions": null,
+          "created_at": "2019-12-04 17:35:48",
+          "updated_at": "2019-12-04 17:35:48"
+        }
+      }
+    },
+
+
+    {
+      "id": 2,
+      "title": "grade17",
+      "professor_id": 16,
+      "created_at": "2019-11-30 19:47:32",
+      "updated_at": "2019-12-01 20:25:20",
+      "professor": {
+        "id": 16,
+        "user_id": 16,
+        "url": null,
+        "created_at": "2019-11-30 19:46:28",
+        "updated_at": "2019-11-30 19:46:28",
+        "user": {
+          "id": 16,
+          "firstName": "sfsf",
+          "lastName": "sfs",
+          "email": null,
+          "email_verified_at": null,
+          "termsAndConditions": null,
+          "created_at": "2019-11-30 19:46:28",
+          "updated_at": "2019-11-30 19:46:28"
+        }
+      }
+    },
+
+
+
+    {
+      "id": 7,
+      "title": "gagdda",
+      "professor_id": 333,
+      "created_at": "2019-11-30 19:48:01",
+      "updated_at": "2019-12-03 22:41:52",
+      "professor": {
+        "id": 333,
+        "user_id": 333,
+        "url": null,
+        "created_at": "2019-12-03 17:55:20",
+        "updated_at": "2019-12-03 17:55:20",
+        "user": {
+          "id": 333,
+          "firstName": "Vukasin",
+          "lastName": "Saravolac",
+          "email": "vukasinsaravolac93@gmail.com",
+          "email_verified_at": "2019-12-03 17:55:20",
+          "termsAndConditions": null,
+          "created_at": "2019-12-03 17:55:20",
+          "updated_at": "2019-12-03 17:55:20"
+        }
+      }
+    },
+
+
+
+    {
+      "id": 8,
+      "title": "nxfhmfhm",
+      "professor_id": 8,
+      "created_at": "2019-11-30 19:50:04",
+      "updated_at": "2019-12-03 22:42:03",
+      "professor": {
+        "id": 8,
+        "user_id": 8,
+        "url": null,
+        "created_at": "2019-11-30 19:38:26",
+        "updated_at": "2019-11-30 19:38:26",
+        "user": {
+          "id": 8,
+          "firstName": "vukasin",
+          "lastName": "vukasinsaravolac93@gmail.com",
+          "email": "vukasinsaravolac93@gmail.com",
+          "email_verified_at": "2019-11-30 19:38:26",
+          "termsAndConditions": null,
+          "created_at": "2019-11-30 19:38:26",
+          "updated_at": "2019-11-30 19:38:26"
+        }
+      }
+    },
+
+
+
+    {
+      "id": 10,
+      "title": "gagdda",
+      "professor_id": 11,
+      "created_at": "2019-11-30 19:50:29",
+      "updated_at": "2019-11-30 19:50:29",
+      "professor": {
+        "id": 11,
+        "user_id": 11,
+        "url": null,
+        "created_at": "2019-11-30 19:40:06",
+        "updated_at": "2019-11-30 19:40:06",
+        "user": {
+          "id": 11,
+          "firstName": "vukasin",
+          "lastName": "vukasinsaravolac93@gmail.com",
+          "email": "vukasinsaravolac93@gmail.com",
+          "email_verified_at": "2019-11-30 19:40:06",
+          "termsAndConditions": null,
+          "created_at": "2019-11-30 19:40:06",
+          "updated_at": "2019-11-30 19:40:06"
+        }
+      }
+    },
+
+
+
+    {
+      "id": 12,
+      "title": "dnevnik11",
+      "professor_id": 14,
+      "created_at": "2019-11-30 19:56:21",
+      "updated_at": "2019-11-30 19:56:21",
+      "professor": {
+        "id": 14,
+        "user_id": 14,
+        "url": null,
+        "created_at": "2019-11-30 19:45:29",
+        "updated_at": "2019-11-30 19:45:29",
+        "user": {
+          "id": 14,
+          "firstName": "Zoran",
+          "lastName": "Todorcevic",
+          "email": null,
+          "email_verified_at": null,
+          "termsAndConditions": null,
+          "created_at": "2019-11-30 19:45:29",
+          "updated_at": "2019-11-30 19:45:29"
+        }
+      }
+    },
+
+
+
+
+    {
+      "id": 13,
+      "title": "gagdda",
+      "professor_id": 10,
+      "created_at": "2019-11-30 19:58:07",
+      "updated_at": "2019-11-30 19:58:07",
+      "professor": {
+        "id": 10,
+        "user_id": 10,
+        "url": null,
+        "created_at": "2019-11-30 19:39:20",
+        "updated_at": "2019-11-30 19:39:20",
+        "user": {
+          "id": 10,
+          "firstName": "vukasin",
+          "lastName": "saravoki",
+          "email": "vukasinsaravolac93@gmail.com",
+          "email_verified_at": "2019-11-30 19:39:20",
+          "termsAndConditions": null,
+          "created_at": "2019-11-30 19:39:20",
+          "updated_at": "2019-11-30 19:39:20"
+        }
+      }
+    },
+
+
+
+    {
+      "id": 16,
+      "title": "gagdda",
+      "professor_id": 13,
+      "created_at": "2019-11-30 20:01:10",
+      "updated_at": "2019-11-30 20:01:10",
+      "professor": {
+        "id": 13,
+        "user_id": 13,
+        "url": null,
+        "created_at": "2019-11-30 19:45:28",
+        "updated_at": "2019-11-30 19:45:28",
+        "user": {
+          "id": 13,
+          "firstName": "vukasin",
+          "lastName": "vukasinsaravolac93@gmail.com",
+          "email": "vukasinsaravolac93@gmail.com",
+          "email_verified_at": "2019-11-30 19:45:28",
+          "termsAndConditions": null,
+          "created_at": "2019-11-30 19:45:28",
+          "updated_at": "2019-11-30 19:45:28"
+        }
+      }
+    },
+
+
+
+    {
+      "id": 17,
+      "title": "gagdda",
+      "professor_id": 20,
+      "created_at": "2019-11-30 20:02:13",
+      "updated_at": "2019-11-30 20:02:13",
+      "professor": {
+        "id": 20,
+        "user_id": 20,
+        "url": null,
+        "created_at": "2019-11-30 19:51:58",
+        "updated_at": "2019-11-30 19:51:58",
+        "user": {
+          "id": 20,
+          "firstName": "vukasin",
+          "lastName": "saravoki",
+          "email": null,
+          "email_verified_at": null,
+          "termsAndConditions": null,
+          "created_at": "2019-11-30 19:51:58",
+          "updated_at": "2019-11-30 19:51:58"
+        }
+      }
+    },
+
+
+
+    {
+      "id": 18,
+      "title": "poslednji",
+      "professor_id": 20,
+      "created_at": "2019-11-30 20:02:34",
+      "updated_at": "2019-11-30 20:02:34",
+      "professor": {
+        "id": 20,
+        "user_id": 20,
+        "url": null,
+        "created_at": "2019-11-30 19:51:58",
+        "updated_at": "2019-11-30 19:51:58",
+        "user": {
+          "id": 20,
+          "firstName": "vukasin",
+          "lastName": "saravoki",
+          "email": null,
+          "email_verified_at": null,
+          "termsAndConditions": null,
+          "created_at": "2019-11-30 19:51:58",
+          "updated_at": "2019-11-30 19:51:58"
+        }
+      }
+
+    }
+
+  ],
+  "count": 10
+}

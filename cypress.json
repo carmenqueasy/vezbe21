@@ -1,4 +1,5 @@
 {
 
-  "baseUrl": "http://www.gradebooktest-fe.com/"
+  "baseUrl": "http://www.gradebooktest-fe.com/",
+  "backendURL": "http://www.gradebooktest.com/api"
 }

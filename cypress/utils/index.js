@@ -23,3 +23,17 @@ export const randomDescription = () => {
             .substr(0, 36)
     );
 }
+
+export const randomFirstN = () => {
+    return (
+
+        Math.random().toString(36).substr(0, 36)
+       
+    );
+}
+
+export const randomLastN = () => {
+    return (
+        Math.random().toString(36).substr(0, 36)
+    );
+}
